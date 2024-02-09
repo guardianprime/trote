@@ -1,0 +1,28 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+/* STYLING FOR THE NAV */
+/* SMALL SIZE */
+#navbarUl {
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+/* STYLING FOR BIGGER SCREENS */
+@media (min-width: 1024px) {
+  #navbarUl {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
