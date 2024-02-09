@@ -7,15 +7,37 @@
 
 body {
   background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+img {
+  display: block;
+}
+nav {
+  opacity: 0.98;
+}
+.hero {
+  height: 100vh;
+  width: 100vw;
+}
+.hero__div-2 {
+  width: 50%;
+}
+.hero__img {
+  width: 350px;
+  height: 450px;
+}
+.main__div__img img {
+  border-radius: 30px;
+}
 /* STYLING FOR THE NAV */
 /* SMALL SIZE */
 #navbarUl {
   font-size: 1.5rem;
   margin: auto;
 }
-
+p {
+  font-size: 1.5rem;
+}
 /* STYLING FOR BIGGER SCREENS */
 @media (min-width: 1024px) {
   #navbarUl {
