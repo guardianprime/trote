@@ -1,33 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap");
 /* GENERAL STYLES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --BODY-F-FAMILY: "Ojuju", sans-serif;
+  --BG-COLOR: rgb(15, 200, 21);
+}
 
+/* UTILITIES */
+h1 .color,
+.color {
+  color: var(--BG-COLOR);
+}
+
+h1,
+.h2-rare {
+  font-family: monospace;
+  font-weight: 700;
+}
+.p-rare {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+}
+.wrap {
+  text-wrap: wrap;
+}
 body {
   background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--BODY-F-FAMILY);
+  overflow-x: none;
 }
 img {
   display: block;
 }
 nav {
   opacity: 0.98;
+  box-shadow: 2px 3px rgba(242, 242, 242, 0.98);
 }
+
+main {
+  padding: 0;
+}
+/*Style for the hover effect  */
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.nav-item .nav-link:active {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 0 0 20px 20px;
+}
+
 .hero {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
-.hero__div-2 {
+
+.welcome-message {
   width: 50%;
 }
+
 .hero__img {
-  width: 350px;
-  height: 450px;
+  height: 35%;
+  max-width: 70%;
+  margin: auto;
 }
 .main__div__img img {
   border-radius: 30px;
+}
+
+/* STYLE FOR THE ICONS ON MAIN */
+.reviews__container {
+  font-size: 1.4rem;
+}
+.reviews__container i {
+  color: var(--BG-COLOR);
 }
 /* STYLING FOR THE NAV */
 /* SMALL SIZE */
@@ -45,6 +96,16 @@ p {
     display: flex;
     justify-content: space-between;
   }
+
+  .hero {
+    background-image: url(./images/png/hero-background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* STYLING FOR SMALLER SCREENS */
+@media (max-width: 100px) {
+}

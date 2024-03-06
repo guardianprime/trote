@@ -56,10 +56,10 @@
               <a class="nav-link active aria-current">Tour</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Blog</a>
+              <a class="nav-link" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Help</a>
+              <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
           <button class="btn btn-outline-success" type="submit">
@@ -68,34 +68,59 @@
         </div>
       </div>
     </nav>
-    <main class="p-4 text-center container-fluid">
+    <main>
       <section class="container-fluid hero">
-        <div class="container-fluid hero__div hero__div-2">
-          <h1>Train apps to your liking</h1>
-          <p>
-            Trote helps you train machine models with a free, easy to use tool.
+        <div class="container-fluid hero__div welcome-message">
+          <h1 class="text-center">
+            <span>Trote</span> <span class="color">Tour</span>
+          </h1>
+          <p class="text-center">
+            Create your first machine models with a free, easy to use tool.
           </p>
-          <button>Download</button><a href="">watch Tour</a>
         </div>
         <div class="hero__div">
-          <img src="./images/png/cpu.jpg" alt="cpu image" class="hero__img" />
+          <img
+            src="./images/svg/undraw_firmware_re_fgdy.svg"
+            class="hero__img"
+            alt="svg image"
+          />
         </div>
       </section>
-      <hr />
       <section class="d-lg-flex justify-content-between my-5">
-        <div class="container-fluid">
-          <h2>Trote Programs</h2>
-          <p>
+        <div class="container-fluid p-4">
+          <h2 class="text-center h2-rare">Trote Programs</h2>
+          <p class="p-rare">
             Build your first OS algorithm without stress in 30 minutes. No code
             or experience required.
           </p>
-          <p>
+          <p class="p-rare">
             An operating system (OS) is the program that, after being initially
             loaded into the computer by a boot program, manages all of the other
             application programs in a computer. The application programs make
             use of the operating system by making requests for services through
             a defined application program interface (API).
           </p>
+          <div class="reviews d-lg-flex">
+            <div class="reviews__container p-4 mx-3">
+              <span class="text-center">Google Play</span>
+              <i class="fa-brands fa-google-play"></i>
+              <div class="reviews__icon">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="reviews__container p-4 mx-3">
+              <span class="text-center">Meta</span>
+              <i class="fa-brands fa-meta"></i>
+              <div class="reviews__icon">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="main__div__img my-5">
           <img
@@ -104,6 +129,14 @@
             width="700px"
             height="auto"
           />
+        </div>
+      </section>
+      <section class="last-section">
+        <div class="container-fluid">
+          <h2 class="text-center">
+            Train your App with <span class="color">Trote</span>
+          </h2>
+          <button type="button" class="btn btn-success">Download</button>
         </div>
       </section>
     </main>
@@ -144,6 +177,9 @@
         <div class="small-icons"><i class="fa-brands fa-x-twitter"></i></div>
         <div class="small-icons"><i class="fa-brands fa-reddit-alien"></i></div>
         <div class="small-icons"><i class="fa-brands fa-youtube"></i></div>
+      </div>
+      <div class="Watermark">
+        <p>Made with ❤️ by Guardianprime</p>
       </div>
     </footer>
     <script
