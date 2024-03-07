@@ -44,20 +44,11 @@ nav {
 main {
   padding: 0;
 }
-/*Style for the hover effect  */
-.nav-item .nav-link:hover,
-.nav-item .nav-link:focus {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-}
-
-.nav-item .nav-link:active {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-  border-radius: 0 0 20px 20px;
-}
 
 .hero {
-  height: 90vh;
+  height: 70vh;
   width: 100vw;
+  margin-top: 50px;
 }
 
 .welcome-message {
@@ -69,14 +60,18 @@ main {
   max-width: 70%;
   margin: auto;
 }
-.main__div__img img {
-  border-radius: 30px;
-}
 
+.section__img {
+  border-radius: 30px;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
 /* STYLE FOR THE ICONS ON MAIN */
 .reviews__container {
   font-size: 1.4rem;
 }
+
 .reviews__container i {
   color: var(--BG-COLOR);
 }
@@ -86,8 +81,36 @@ main {
   font-size: 1.5rem;
   margin: auto;
 }
+
 p {
   font-size: 1.5rem;
+}
+
+.last-section {
+  height: 50vh;
+  width: 100vw;
+}
+
+.last-section h1 {
+  font-family: monospace;
+  font-weight: 800;
+}
+
+.last-section button {
+  margin-top: 40px;
+  font-family: inherit;
+  background-color: var(--BG-COLOR);
+  width: 150px;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+}
+
+/* FOOTER STYLES */
+.footer__div ul li {
+  list-style-type: none;
+  outline: 1px solid red;
 }
 /* STYLING FOR BIGGER SCREENS */
 @media (min-width: 1024px) {
@@ -98,9 +121,46 @@ p {
   }
 
   .hero {
-    background-image: url(./images/png/hero-background.jpg);
+    background-image: url("./images/png/hero-background.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 90vh;
+    width: 100vw;
+  }
+  .last-section div {
+    width: 30%;
+    margin: auto;
+    height: 100%;
+    padding: 30px;
+  }
+
+  .section__img {
+    border-radius: 30px;
+    width: 40%;
+    height: auto;
+  }
+
+  /* FOOTER STYLES FOR LARGE */
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+      "ft ft ft"
+      "ic ic ic"
+      "wd wd wd";
+  }
+
+  .footer__div {
+    grid-area: ft;
+  }
+  .icon-container {
+    grid-area: ic;
+  }
+  .watermark {
+    grid-area: wd;
   }
 }
 
