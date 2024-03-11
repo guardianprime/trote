@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 :root {
-  --BODY-F-FAMILY: "Ojuju", sans-serif;
+  --BODY-F-FAMILY: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --BG-COLOR: rgb(15, 200, 21);
 }
 
@@ -28,18 +28,34 @@ h1,
 .wrap {
   text-wrap: wrap;
 }
+/* -------------- */
+
 body {
   background-color: white;
   font-family: var(--BODY-F-FAMILY);
   overflow-x: none;
 }
+
 img {
   display: block;
 }
+
 nav {
   opacity: 0.98;
   box-shadow: 2px 3px rgba(242, 242, 242, 0.98);
 }
+
+/* STYLING FOR THE NAV */
+/* SMALL SIZE */
+#navbarUl {
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+p {
+  font-size: 1.5rem;
+}
+/* ---------- */
 
 main {
   padding: 0;
@@ -61,12 +77,18 @@ main {
   margin: auto;
 }
 
-.section__img {
+.section-second__img {
   border-radius: 30px;
   width: 80%;
   height: auto;
   margin: auto;
 }
+
+.main__section-second {
+  margin-top: 100px;
+  padding: 20px;
+}
+
 /* STYLE FOR THE ICONS ON MAIN */
 .reviews__container {
   font-size: 1.4rem;
@@ -75,28 +97,20 @@ main {
 .reviews__container i {
   color: var(--BG-COLOR);
 }
-/* STYLING FOR THE NAV */
-/* SMALL SIZE */
-#navbarUl {
-  font-size: 1.5rem;
-  margin: auto;
-}
 
-p {
-  font-size: 1.5rem;
-}
+/* ---------- */
 
-.last-section {
+.main__section-last {
   height: 50vh;
   width: 100vw;
 }
 
-.last-section h1 {
+.main__section-last h1 {
   font-family: monospace;
   font-weight: 800;
 }
 
-.last-section button {
+.main__section-last button {
   margin-top: 40px;
   font-family: inherit;
   background-color: var(--BG-COLOR);
@@ -108,10 +122,35 @@ p {
 }
 
 /* FOOTER STYLES */
+
+.footer__section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
 .footer__div ul li {
   list-style-type: none;
-  outline: 1px solid red;
 }
+
+.footer__div ul li:first-child {
+  font-weight: bold;
+}
+
+.icon-container {
+  display: flex;
+  font-size: 1.3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__div-last {
+  width: 100%;
+  text-align: center;
+}
+
 /* STYLING FOR BIGGER SCREENS */
 @media (min-width: 1024px) {
   #navbarUl {
@@ -128,7 +167,17 @@ p {
     height: 90vh;
     width: 100vw;
   }
-  .last-section div {
+
+  .section-second__div {
+    width: 47%;
+  }
+
+  .section-second__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main__section-last div {
     width: 30%;
     margin: auto;
     height: 100%;
@@ -142,25 +191,18 @@ p {
   }
 
   /* FOOTER STYLES FOR LARGE */
-
   footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas:
-      "ft ft ft"
-      "ic ic ic"
-      "wd wd wd";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer__div {
-    grid-area: ft;
-  }
-  .icon-container {
-    grid-area: ic;
-  }
-  .watermark {
-    grid-area: wd;
+  .footer__section {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
   }
 }
 
