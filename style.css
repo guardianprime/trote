@@ -85,14 +85,11 @@ main {
 }
 
 .main__section-second {
-  margin-top: 100px;
+  margin-top: 120px;
   padding: 20px;
 }
 
 /* STYLE FOR THE ICONS ON MAIN */
-.reviews__container {
-  font-size: 1.4rem;
-}
 
 .reviews__container i {
   color: var(--BG-COLOR);
@@ -141,9 +138,14 @@ main {
 .icon-container {
   display: flex;
   font-size: 1.3rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  margin: auto;
+}
+
+.footer__img {
+  width: 150px;
+  height: auto;
 }
 
 .footer__div-last {
@@ -166,6 +168,14 @@ main {
     margin-top: 20px;
     height: 90vh;
     width: 100vw;
+  }
+
+  .reviews__container {
+    font-size: 1.4rem;
+  }
+
+  .main__section-second {
+    margin-top: 100px;
   }
 
   .section-second__div {
@@ -199,9 +209,8 @@ main {
   }
 
   .footer__section {
-    font-size: 0.9rem;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 70%;
   }
 }
